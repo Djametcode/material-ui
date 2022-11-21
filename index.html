@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Ui</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand&family=Sono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+                'joe': ['Josefin Sans', 'sans-serif'],
+                'sono': ['Sono', 'sans-serif'],
+                'sand': ['Quicksand', 'sans-serif']
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-sand">
+    <div class=" flex flex-row justify-center gap-5 bg-cyan-500 text-white p-10 text-3xl font-bold">
+        <span class="cursor-pointer" onclick="opens()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 absolute left-10">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </span>
+        <h1>DjametPulsa</h1>
+    </div>
+    <div id="nav" class="display-none flex flex-row  justify-around bg-gray-600 m-0 text-white font-bold">
+        <a class="text-center hover:bg-cyan-500 display-block p-2 w-full" href="#">Home</a>
+        <a class="text-center hover:bg-cyan-500 display-block p-2 w-full" href="#">Indosat</a>
+        <a class="text-center hover:bg-cyan-500 display-block p-2 w-full" href="#">three</a>
+    </div>
+        <div class="bg-stone-200 m-4 rounded-lg">
+            <h2 class="text-center pt-3 text-xl font-bold">PULSA INDOSAT</h2>
+            <form class="flex flex-col gap-2 items-center py-8">
+                <input class="p-1 rounded-lg w-46" type="text" placeholder="Nomor Hp">
+                <input class="p-1 rounded-lg" type="text" placeholder="Nomor Hp">
+                <input class="bg-white w-12 p-1 rounded-lg" type="submit" value="kirim">
+            </form>
+        </div>
+        <div class="bg-orange-100 m-4 p-4 rounded-lg text-sm">
+            <p>Dapatkan diskon 10% ketika pembelian pertama pulsa di TokoPulsa !</p>
+        </div>
+        <div class="bg-orange-100 m-4 p-4 rounded-lg text-sm">
+            <p>Kita baru mulai Hope y'all enjoy this jangan lupa share ke temen kamu ya </p>
+        </div>
+        <div class="bg-orange-100 m-4 p-4 rounded-lg text-sm">
+            <p>Top up bermasalah? <br> hubungi kami di whatsapp 911 </p>
+        </div>
+
+        <footer>
+            <div class="bg-gray-800 text-white p-2 text-center">
+                <p>Copyright &copy; 2022 <br> DjametPulsa </p>
+            </div>
+        </footer>
+</body>
+</html>
